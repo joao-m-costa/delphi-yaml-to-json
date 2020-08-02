@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/10 17:58:29.000.509,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/10 20:33:51.000.728,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/10 20:40:29.000.684,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/24 21:59:11.000.325,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2020/04/24 21:59:12.000.762,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2020/04/24 21:59:12.000.684,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2020/05/10 22:15:21.000.273,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/10 22:20:30.000.640,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/12 18:51:57.000.388,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/12 19:04:20.000.086,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/02 11:35:05.903,=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/02 11:36:09.949,C:\CodeX\Delphi\Tests\YAML2JSON\Test\fmTestForm.dfm=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/08/02 11:36:09.949,C:\CodeX\Delphi\Tests\YAML2JSON\Test\fmTestForm.pas=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/02 11:36:24.420,C:\CodeX\Delphi\Tests\YAML2JSON\Test\YamlJson.dproj=C:\Users\Joao Costa\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/08/02 11:36:52.548,=C:\CodeX\Delphi\Tests\YAML2JSON\Unit\Costate.Utils.Yaml.pas</Transaction>
+  </Transactions>
+</BorlandProject>

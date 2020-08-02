@@ -1,0 +1,8 @@
+
+README
+------
+
+A simple delphi class to convert JSON to YAML and YAML to JSON.
+Aimed for use with small YAML/JSON data.
+
+Tested with delphi 10.3 Rio.

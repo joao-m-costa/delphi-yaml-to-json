@@ -30,6 +30,7 @@ type
     class procedure InternalYamlNextProps( AYAML: TStrings; const ACurrentLine, ACurrentIndent: Integer; var AIsArray, AIsObject: boolean; var ALevel: Integer ); static;
     class function  InternalYamlPrevLine( AYAML: TStrings; ACurrentLine: Integer ): Integer; static;
     class function  InternalYamlHasMoreText( AYAML: TStrings; ACurrentLine: Integer ): boolean; static;
+    class function  InternalYamlEscapeSpecialCharacters( AValue: string): string; static;
   public
     // JSON to YAML
     class function  JsonToYaml( AJSON: string; AIndentation: TYamlIdentation = 2 ): string; overload; static;
@@ -287,7 +288,7 @@ begin
   else if AValue.ToLower.Equals('false') then
     AValue := 'false'
   else
-    AValue := '"' + AValue + '"';
+    AValue := '"' + InternalYamlEscapeSpecialCharacters(AValue) + '"';
 end;
 
 class function  TYamlUtils.InternalYamlPrevLine( AYAML: TStrings; ACurrentLine: Integer ): Integer;
@@ -677,6 +678,30 @@ begin
       end;
     if InternalYamlHasMoreText( AYAML, ASrcLine ) then
       AOutStrings[AOutStrings.Count - 1] := AOutStrings[AOutStrings.Count - 1] + ', ';
+  end;
+end;
+
+class function TYamlUtils.InternalYamlEscapeSpecialCharacters(AValue: string): string;
+var
+  LCharIndex: Integer;
+  LChar: Char;
+begin
+  Result := '';
+  for LCharIndex := 1 to Length(AValue) do
+  begin
+    LChar := AValue[LCharIndex];
+    case LChar of
+      '"': Result := Result + '\"';  // Escape double quote
+      '\': Result := Result + '\\';  // Escape backslash
+      '/': Result := Result + '\/';  // Optional: Escape forward slash (may not be necessary)
+      #8: Result := Result + '\b';   // Escape backspace
+      #9: Result := Result + '\t';   // Escape tab
+      #10: Result := Result + '\n';  // Escape newline
+      #12: Result := Result + '\f';  // Escape form feed
+      #13: Result := Result + '\r';  // Escape carriage return
+    else
+        Result := Result + LChar;
+    end;
   end;
 end;
 

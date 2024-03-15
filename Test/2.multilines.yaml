@@ -1,0 +1,27 @@
+glossary:
+  title: example glossary
+    with miltiline
+    title
+  GlossDiv:
+    title: |+multiline subtitle "and quotes"
+    
+      with line feeds 
+      at the end
+      
+      
+    GlossList:
+      GlossEntry:
+        ID: SGML
+        SortAs: "SGML"
+        GlossTerm: Standard Generalized Markup Language
+        Path: C:\root\folder
+        Acronym: 
+        Abbrev: ISO 8879:1986
+        GlossDef:
+          para: A meta-markup language, used to create markup languages such as DocBook.
+          GlossSeeAlso:
+            - GML
+            - XML
+        GlossSee: markup
+        GlossTags: [ Tag1, Tag2, Tag3 ]
+        GlossInfo: Glossary annotations
